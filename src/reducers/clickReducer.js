@@ -1,7 +1,9 @@
 export const clickReducer = (state = { msg: '' }, action) => {
+    // console.log(state);
+    // console.log(action);
     switch (action.type) {
         case 'CLICK_HELLO':
-            return { ...state, msg: 'School of net' }
+            return { ...state, msg: action.msg }
             break;
 
         default:
