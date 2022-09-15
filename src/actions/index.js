@@ -1,7 +1,10 @@
-export const clickHelloAction = (value) => {
-    //console.log(value);
-    return{
-        type: 'CLICK_HELLO',
-        msg: value
-    }
-}
+import { clickHelloAction } from "./clickHelloAction";
+// import { CounterActions } from "./CounterActions";
+import { incrementAction, decrementAction } from "./CounterActions";
+
+
+// export { clickHelloAction, CounterActions }
+export { 
+    clickHelloAction, 
+    incrementAction,
+    decrementAction }
